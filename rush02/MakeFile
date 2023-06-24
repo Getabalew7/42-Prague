@@ -1,0 +1,23 @@
+SRCS	= ft_atoi.c main.c
+OBJS	= ${SRCS:.c=.o}
+NAME 	= rush02
+CC		= gcc
+RM		= rm -f
+CFLAGS	= -Wall -Wextra -Werror
+
+.c.o:
+	${CC}  -c $< -o ${<:.c=.o} -I ${INCS}
+
+${NAME}: ${OBJS}
+	${LIBC} ${NAME} ${OBJS}
+	${LIBR} ${NAME}
+
+all: ${NAME}
+
+clean:
+	${RM} ${OBJS}
+
+fclean: clean
+	${RM} ${NAME}
+
+re: fclean all
