@@ -13,7 +13,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include"ft_dict_structure.h"
-void	ft_convert_number(int number, struct s_dictionary num_dictionary[]);
+#include "ft_convertor_number.h"
 char *ft_search(int number, struct s_dictionary *num_dictionary)
 {
 	int i;
@@ -31,7 +31,7 @@ char *ft_search(int number, struct s_dictionary *num_dictionary)
 }
 void	ft_display_res(int number, struct s_dictionary num_dictionary[], int digit)
 {
-	printf("%s ", ft_search(number/digit,num_dictionary));
+	ft_convert_number((number/digit),num_dictionary);
 	printf("%s ", ft_search(digit,num_dictionary));
 	if(number % digit != 0)
 	{
@@ -41,7 +41,7 @@ void	ft_display_res(int number, struct s_dictionary num_dictionary[], int digit)
 void	ft_convert_number(int number, struct s_dictionary num_dictionary[])
 {
 	if(number == 0)
-		printf("%s", ft_search(number,num_dictionary));
+		printf("%s ", ft_search(number,num_dictionary));
 	else if(number >= 1000000000)
 		ft_display_res(number,num_dictionary,1000000000);
 	else if(number >= 1000000)
@@ -54,12 +54,10 @@ void	ft_convert_number(int number, struct s_dictionary num_dictionary[])
 	}
 	else if(number >= 20)
 	{   
-		printf("%s", "and ");
 		printf("%s ", ft_search(number/10 *10,num_dictionary));
 		if(number % 10 != 0)
 			ft_convert_number((number % 10), num_dictionary);
 	}
 	else if(number > 0)
-		printf("%s", ft_search(number ,num_dictionary));
-	
+		printf("%s ", ft_search(number ,num_dictionary));
 }

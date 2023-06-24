@@ -18,5 +18,4 @@ struct s_dictionary
 	int key;
 	char *value;
 };
-
 #endif
