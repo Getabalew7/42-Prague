@@ -7,4 +7,5 @@ void	ft_print_str(char *str)
 		write(1, &*str, 1);
 		str++;
 	}
+	write(1, " ", 2);
 }
