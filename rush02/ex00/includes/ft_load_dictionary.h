@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_load_dictionary.h                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/07 16:38:00 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 15:54:27 by ghailema         ###   ########.fr       */
+/*   Created: 2023/06/25 11:35:05 by ghailema          #+#    #+#             */
+/*   Updated: 2023/06/25 11:35:51 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<unistd.h>
 
-void	ft_print_alphabet(void)
-{
-	char	letter;
+#ifndef FT_LOAD_DICTIONARY_H
+# define FT_LOAD_DICTIONARY_H
 
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
-}
+struct	s_dictionary	*ft_load_dictionary(struct s_dictionary *num_dictionary,
+							char *file);
+
+#endif

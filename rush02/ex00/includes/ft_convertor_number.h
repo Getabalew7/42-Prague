@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_convertor_number.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/07 16:38:00 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 15:54:27 by ghailema         ###   ########.fr       */
+/*   Created: 2023/06/25 11:31:18 by ghailema          #+#    #+#             */
+/*   Updated: 2023/06/25 11:31:32 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<unistd.h>
 
-void	ft_print_alphabet(void)
-{
-	char	letter;
+#ifndef FT_CONVERTOR_NUMBER_H
+# define FT_CONVERTOR_NUMBER_H
 
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
-}
+void	ft_convert_number(unsigned int number,
+			struct s_dictionary num_dictionary[], char *file);
+
+#endif

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
+int	t_is_prime(int nb)
 {
 	int	i;
 
@@ -37,8 +37,4 @@ int	ft_find_next_prime(int nb)
 		nb++;
 	}
 	return (0);
-}
-int main()
-{
-	
 }

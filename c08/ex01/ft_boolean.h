@@ -26,5 +26,4 @@ typedef enum a_bool{
 # define EVEN_MSG "I have an even number of arguments.\n"
 # define ODD_MSG "I have an odd number of arguments.\n"
 # define EVEN(num) ((num % 2) == 0)
-
 #endif

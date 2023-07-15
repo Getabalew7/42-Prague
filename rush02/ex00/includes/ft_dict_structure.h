@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_dict_structure.h                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/07 16:38:00 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 15:54:27 by ghailema         ###   ########.fr       */
+/*   Created: 2023/06/24 18:48:16 by ghailema          #+#    #+#             */
+/*   Updated: 2023/06/25 11:34:21 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<unistd.h>
 
-void	ft_print_alphabet(void)
+#ifndef FT_DICT_STRUCTURE_H
+# define FT_DICT_STRUCTURE_H
+
+struct s_dictionary
 {
-	char	letter;
+	unsigned int		key;
+	char				*value;
+};
 
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
-}
+#endif

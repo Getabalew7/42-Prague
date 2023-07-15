@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_atoi.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/07 16:38:00 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 15:54:27 by ghailema         ###   ########.fr       */
+/*   Created: 2023/06/25 11:30:03 by ghailema          #+#    #+#             */
+/*   Updated: 2023/06/25 11:30:59 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<unistd.h>
 
-void	ft_print_alphabet(void)
-{
-	char	letter;
+#ifndef FT_ATOI_H
+# define FT_ATOI_H
 
-	letter = 'a';
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter++;
-	}
-}
+int	ft_atoi(char *str);
+
+#endif

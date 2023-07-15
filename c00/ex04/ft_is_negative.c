@@ -6,7 +6,7 @@
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 17:12:37 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 16:45:21 by ghailema         ###   ########.fr       */
+/*   Updated: 2023/06/09 10:29:18 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,4 @@ void	ft_is_negative(int n)
 	{
 		write(1, "P", 1);
 	}
-}
-int main(){
-	ft_is_negative(45);
-	return 0;
 }

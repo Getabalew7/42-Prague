@@ -6,7 +6,7 @@
 /*   By: ghailema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 12:21:13 by ghailema          #+#    #+#             */
-/*   Updated: 2023/06/08 17:36:03 by ghailema         ###   ########.fr       */
+/*   Updated: 2023/06/10 10:28:56 by ghailema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -32,8 +32,4 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar(nb + 48);
 	}
-}
-int main(){
-	ft_putnbr(43);
-	return 0;
 }
