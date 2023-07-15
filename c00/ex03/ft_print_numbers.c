@@ -23,3 +23,7 @@ void	ft_print_numbers(void)
 		digit++;
 	}
 }
+int main(){
+	ft_print_numbers();
+	return 0;
+}
